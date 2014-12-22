@@ -1,0 +1,89 @@
+Set Up
+======
+
+# Install node (comes with npm)
+http://nodejs.org/
+
+# Install Ember CLI
+
+http://www.ember-cli.com/
+You can jump in and get your feet wet with the Starter Kit from emberjs.com
+easily, but CLI is where Ember's headed and provides a robust setup for
+developing a Real Application. It will be standard in Ember 2.0
+(https://github.com/emberjs/rfcs/pull/15).
+
+```
+npm install -g ember-cli
+npm install -g bower
+npm install -g phantomjs
+```
+
+# Creating a New App
+```
+ember new my-new-app
+cd my-new-app
+ember server
+```
+
+# SASS support
+`npm install --save-dev broccoli-sass`
+
+# CoffeeScript support
+`npm install --save-dev ember-cli-coffeescript`
+
+Note that you will have to escape `import` and `export` lines in your .coffee
+files with beginning and ending ticks, e.g. `\`import Ember from 'ember';\``
+
+
+Ember Inspector for Chrome: https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
+
+Sublime Text: Install Package > Handlebars
+
+Things to Know About that Ember CLI Uses
+========================================
+broccoli - https://github.com/broccolijs/broccoli
+Build tool; "A fast, reliable asset pipeline, supporting constant-time rebuilds and compact build definitions. Comparable to the Rails asset pipeline in scope, though it runs on Node and is backend-agnostic"
+Configured via Brocfile.js in top level of CLI generated app
+
+bower - http://bower.io/
+"A package manager for the web"
+
+JavaScript modules - http://jsmodules.io/
+Ember CLI uses the ES6 Module Transpiler (https://github.com/esnext/es6-module-transpiler) to support ES6 module syntax.
+
+Handlebars - http://handlebarsjs.com/
+Template language. Files use the `hbs` extension.
+
+Videos
+======
+
+http://allthingsopen.org/talks/the-ember-js-framework-everything-you-need-to-know/ - All Things Open 2014 | Yehuda Katz | The Ember.js Framework - Everything You Need To Know
+intro, ember culture, aggressive about incorporating other frameworks' ideas
+
+
+https://www.youtube.com/watch?v=NM4EyOmaPbE - Yehuda Katz - A Day in the Life of an Ember Developer - BrazilJS 2014
+comparison of attribute bindings, ember debugger, composability and maintainability enabled by Ember
+
+https://www.youtube.com/watch?v=jScLjUlLTLI - Tom Dale and Yehuda Katz - In Defense of Frameworks
+Follow up interview: https://www.youtube.com/watch?v=VI__nGPT9kk
+contrasting with Angular ("a toolkit for building your own framework")
+
+
+Blog Posts
+==========
+http://www.talentbuddy.co/blog/building-with-ember-js-at-vine/
+
+
+Bonus Points
+============
+https://www.codeschool.com/courses/warming-up-with-ember-js (paid)
+
+Internals/Contributing
+======================
+http://emberjs.com/community/
+https://github.com/emberjs/ember.js
+
+Further Research
+================
+http://2014.emberconf.com/schedule.html - All 2014 Ember Conf videos
+http://emberweekly.com/
