@@ -41,6 +41,15 @@ ember server
 Note that you will have to escape `import` and `export` lines in your .coffee
 files with beginning and ending ticks, e.g. `\`import Ember from 'ember';\``
 
+### Bootstrap
+`bower install --save-dev bootstrap`
+
+Then, in Brocfile.js, add the following line before `module.exports = app.toTree();`:
+
+`app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');`
+
+This is an example of using Broccoli for asset management, which will learn more about shortly.
+
 ### Ember Inspector for Chrome
  https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
 
