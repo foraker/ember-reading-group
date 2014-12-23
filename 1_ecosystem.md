@@ -84,6 +84,11 @@ https://facebook.github.io/watchman/
 
 Watches files for changes and triggers options. Without it, Ember CLI will fall back to NodeWatcher.
 
+## Express
+http://expressjs.com/
+
+A web framework for Node.js. It's used by Ember CLI to run your app in development as well as for mocking endpoints for Ember Data.
+
 # :rowboat: Assignments
 
 ## JavaScript modules
