@@ -13,6 +13,16 @@ npm install -g bower
 npm install -g phantomjs
 ```
 
+## Install watchman
+https://facebook.github.io/watchman/docs/install.html
+
+We want version 3.0.0, which is relatively recent, so update Homebrew first. It's telling me that it's installing 3.0.0 but `watchman version` still tells me 2.9.8, but this should work theoretically... If not, no worries.
+
+```
+brew update
+brew install watchman
+```
+
 ## Creating a New App
 ```
 ember new my-new-app
@@ -59,6 +69,11 @@ Ember CLI uses the ES6 Module Transpiler (https://github.com/esnext/es6-module-t
 http://handlebarsjs.com/
 
 Template language. Files use the `hbs` extension.
+
+## Watchman
+https://facebook.github.io/watchman/
+
+Watches files for changes and triggers options. Without it, Ember CLI will fall back to NodeWatcher.
 
 # :rowboat: Assignments
 
