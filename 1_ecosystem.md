@@ -1,5 +1,42 @@
 # Week 1: Ecosystem
 
+## Things Ember CLI Uses
+
+You should know what these do and have a passing familiarity, mostly so you know what's responsible for what and can look into how to fix whatever problems you encounter.
+
+### broccoli
+https://github.com/broccolijs/broccoli
+
+Build tool; "A fast, reliable asset pipeline, supporting constant-time rebuilds and compact build definitions. Comparable to the Rails asset pipeline in scope, though it runs on Node and is backend-agnostic"
+
+You will probably add configuration to Brocfile.js to deal with vendor asset management.
+
+### bower
+http://bower.io/
+
+"A package manager for the web"
+
+### JavaScript modules
+http://jsmodules.io/
+
+Ember CLI uses the ES6 Module Transpiler (https://github.com/esnext/es6-module-transpiler) to support ES6 module syntax.
+
+### Handlebars
+http://handlebarsjs.com/
+
+Template language. Files use the `hbs` extension.
+
+### Watchman
+https://facebook.github.io/watchman/
+
+Watches files for changes and triggers actions. Without it, Ember CLI will fall back to NodeWatcher.
+
+### Express
+http://expressjs.com/
+
+A web framework for Node.js. It's used by Ember CLI to run your app in development as well as for mocking endpoints for Ember Data.
+
+
 ## Set up
 
 ### Install node
@@ -56,42 +93,6 @@ This is an example of using Broccoli for asset management, which will learn more
 
 #### Ember Inspector for Chrome
  https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
-
-## Things Ember CLI Uses
-
-You should know what these do and have a passing familiarity, mostly so you know what's responsible for what and can look into how to fix whatever problems you encounter.
-
-### broccoli
-https://github.com/broccolijs/broccoli
-
-Build tool; "A fast, reliable asset pipeline, supporting constant-time rebuilds and compact build definitions. Comparable to the Rails asset pipeline in scope, though it runs on Node and is backend-agnostic"
-
-You will probably add configuration to Brocfile.js to deal with vendor asset management.
-
-### bower
-http://bower.io/
-
-"A package manager for the web"
-
-### JavaScript modules
-http://jsmodules.io/
-
-Ember CLI uses the ES6 Module Transpiler (https://github.com/esnext/es6-module-transpiler) to support ES6 module syntax.
-
-### Handlebars
-http://handlebarsjs.com/
-
-Template language. Files use the `hbs` extension.
-
-### Watchman
-https://facebook.github.io/watchman/
-
-Watches files for changes and triggers options. Without it, Ember CLI will fall back to NodeWatcher.
-
-### Express
-http://expressjs.com/
-
-A web framework for Node.js. It's used by Ember CLI to run your app in development as well as for mocking endpoints for Ember Data.
 
 ## Assignments
 
