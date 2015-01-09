@@ -51,3 +51,7 @@ A step-by-step guide to setting up an app with Ember CLI much like our activity 
 Notes regarding the Airpair posts:
 - To hide the obnoxious "Like learning from posts like this? Subscribe for more!" messages, I highly recommend putting "javascript:$('pre footer').hide()" in your location bar.
 - The comments are actually worth reading for the most part.
+
+## Reference
+
+:tv: If you want to see a screencast of me doing this activity while drunk, it's available [here](https://www.youtube.com/watch?v=vLXGKNA4P_g).
