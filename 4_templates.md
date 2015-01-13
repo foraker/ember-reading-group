@@ -34,7 +34,7 @@ For an example custom helper, [see the definition of `format-date`](https://gith
 
 You probably want to define components instead of views. See the "Routeable Components" section of [The Road to Ember 2.0 RFC](https://github.com/emberjs/rfcs/pull/15).
 
-Do read the Guide on Views but I won't be included many notes here.
+Do read the Guide on Views, but I won't be including many notes here.
 
 The built-in views, [Ember.Checkbox](http://emberjs.com/api/classes/Ember.Checkbox.html), [Ember.TextField](http://emberjs.com/api/classes/Ember.TextField.html), [Ember.TextArea](http://emberjs.com/api/classes/Ember.TextArea.html), and [Ember.Select](http://emberjs.com/api/classes/Ember.Select.html) are primarily interacted with using the Handlebars helper but can be extended to customize form behavior.
 
