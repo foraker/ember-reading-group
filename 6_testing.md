@@ -38,7 +38,62 @@ These trigger immediately.
 
 `andThen(function() { ... })` will wait until after preceding asynchronous calls are finished before the function is executed.
 
-### Example Integration Test
+### Custom Test Helpers
+
+You can write your own helpers with `Ember.Test.registerHelper` and `Ember.Test.registerAsyncHelper`. Here's an example from the Guides:
+
+```javascript
+Ember.Test.registerHelper('shouldHaveElementWithCount',
+function(app, selector, n, context) {
+  var el = findWithAssert(selector, context);
+  var count = el.length;
+  equal(n, count, 'found ' + count + ' times');
+}
+);
+```
+
+### Examples
+
+These are mostly pulled from the Guides and provided here for reference.
+
+#### Model Test
+
+This is the only example where we'll use CoffeeScript and be in the context of an Ember CLI app (at least until I actually write some of the other varieties of tests and update this. For now, they're guide copypasta. Feel free to PR your own!)
+
+Note the use of `moduleForModel` for Ember Data models.
+
+For the model, `app/models/instructor.coffee`, which looks like this:
+
+```coffeescript
+`import DS from 'ember-data'`
+`import Ember from 'ember'`
+
+Instructor = DS.Model.extend {
+  firstName: DS.attr('string'),
+  lastName: DS.attr('string'),
+  fullName: Ember.computed 'firstName', 'lastName', ->
+    @get('firstName') + ' ' + @get('lastName')
+}
+
+`export default Instructor`
+```
+
+You could add a test that looks like this in `tests/unit/models/instructor-test.coffee`:
+
+```coffeescript
+`import { test, moduleForModel } from 'ember-qunit'`
+
+moduleForModel 'instructor', 'Instructor', {
+  needs: []
+}
+
+test 'it computes its full name', ->
+  model = @subject(firstName: 'George', lastName: 'Baloney')
+  equal(model.get('fullName'), 'George Baloney')
+
+  ```
+
+#### Integration Test
 
 ```javascript
 test('simple test', function() {
@@ -55,48 +110,154 @@ test('simple test', function() {
 });
 ```
 
-### Example Unit Test
+#### Component Test
 
-For the model, `app/models/post.js`, which looks like this:
+Will be set up using `moduleForComponent`.
+
+Implementation:
 
 ```javascript
-import DS from 'ember-data';
-
-var attr = DS.attr;
-
-export default DS.Model.extend({
-  title: attr('string')
-  uppercaseTitle: function() {
-    return this.get('title').toUpperCase();
-  }.property('title')
+App.PrettyColorComponent = Ember.Component.extend({
+  classNames: ['pretty-color'],
+  attributeBindings: ['style'],
+  style: function() {
+    return 'color: ' + this.get('name') + ';';
+  }.property('name')
 });
 ```
 
-You could add a test that looks like this in `tests/unit/models/post-test.js`:
+Testing color changes updates rendered HTML's style attribute:
 
 ```javascript
-import {
-  moduleForModel,
-  test
-} from 'ember-qunit';
-import Ember from 'ember';
+test('changing colors', function(){
+  var component = this.subject();
 
-moduleForModel('post', 'Post', {
-  // Specify the other units that are required for this test.
-  // needs: []
-});
-
-test('uppercaseTitle returns the uppercase title', function() {
-  var model = this.subject();
+  // we wrap this with Ember.run because it is an async function
   Ember.run(function() {
-    model.set('title', 'i dunno some post title i guess');
-    equal(model.get('uppercaseTitle'), 'I DUNNO SOME POST TITLE I GUESS');
+    component.set('name','red');
   });
+
+  // first call to $() renders the component.
+  equal(this.$().attr('style'), 'color: red;');
+
+  // another async function, so we need to wrap it with Ember.run
+  Ember.run(function(){
+    component.set('name', 'green');
+  });
+
+  equal(this.$().attr('style'), 'color: green;');
 });
 ```
 
-Without the `Ember.run`, it complained about asychronous tests when the run loop was disabled due to being in the test environment.
+Testing template is rendered properly:
 
+```javascript
+test('template is rendered with the color name', function(){
+
+  var component = this.subject();
+
+  // first call to $() renders the component.
+  equal($.trim(this.$().text()), 'Pretty Color:');
+
+  // we wrap this with Ember.run because it is an async function
+  Ember.run(function(){
+    component.set('name', 'green');
+  });
+
+  equal($.trim(this.$().text()), 'Pretty Color: green');
+});
+```
+
+#### Controller Test
+
+Implementation:
+
+```javascript
+App.PostsController = Ember.ArrayController.extend({
+  propA: 'You need to write tests',
+  propB: 'And write one for me too',
+
+  setPropB: function(str) {
+    this.set('propB', str);
+  },
+
+  actions: {
+    setProps: function(str) {
+      this.set('propA', 'Testing is cool');
+      this.setPropB(str);
+    }
+  }
+});
+```
+
+Test:
+
+```javascript
+test('calling the action setProps updates props A and B', function() {
+  expect(4);
+
+  // get the controller instance
+  var ctrl = this.subject();
+
+  // check the properties before the action is triggered
+  equal(ctrl.get('propA'), 'You need to write tests');
+  equal(ctrl.get('propB'), 'And write one for me too');
+
+  // trigger the action on the controller with the `send` method,
+  // passing in params for the action
+  ctrl.send('setProps', 'Testing Rocks!');
+
+  equal(ctrl.get('propA'), 'Testing is cool');
+  equal(ctrl.get('propB'), 'Testing Rocks!');
+});
+```
+
+#### Route Test
+
+May usually be better served via integration tests.
+
+Implementation:
+
+```javascript
+App.ApplicationRoute = Em.Route.extend({
+  actions: {
+    displayAlert: function(text) {
+      this._displayAlert(text);
+    }
+  },
+
+  _displayAlert: function(text) {
+    alert(text);
+  }
+});
+```
+
+Test:
+
+```javascript
+moduleFor('route:application', 'Unit: route/application', {
+  setup: function() {
+    originalAlert = window.alert;
+  },
+  teardown: function() {
+    window.alert = originalAlert;
+  }
+});
+
+test('Alert is called on displayAlert', function() {
+  expect(1);
+
+  var route = this.subject(),
+    expectedText = 'foo';
+
+  window.alert = function(text) {
+    equal(text, expectedText,
+      'expected ' + text + ' to be ' + expectedText);
+  };
+
+  route._displayAlert(expectedText);
+});
+```
 
 ## Assignments
 
