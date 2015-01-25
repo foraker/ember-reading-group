@@ -105,3 +105,9 @@ Without the `Ember.run`, it complained about asychronous tests when the run loop
 :book: http://emberjs.com/guides/testing/
 
 Read the whole section of the Ember Guides on Testing.
+
+### Test-Driving Ember
+
+:tv: http://blog.unspace.ca/post/107903324912/cory-forsyth-on-test-driving-ember
+
+Introduction to testing in Ember that touches on the internals.
