@@ -37,6 +37,10 @@ Figure out how to test Ember apps.
 
 Peak under the covers to see how Ember works; be inspired to contribute.
 
+### [Additional Resources](resources.md)
+
+Explore more with this organized links of additional resources that didn't fit well within a specific week.
+
 ## Iconography
 
 :book: Read this
