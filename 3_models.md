@@ -1,5 +1,39 @@
 # Week 3: Models
 
+## Assignments
+
+### Ember Data Model Maker
+
+:rowboat: http://andycrum.github.io/ember-data-model-maker/
+
+Play with model definitions and see difference between `DS.RestAdapter` and `DS.ActiveModelAdapter`
+
+### The Object Model Guide
+
+:book: http://emberjs.com/guides/object-model/classes-and-instances/
+
+Read the whole "The Object Model" section of the Ember Guides.
+
+### Ember Models Guide
+
+:book: http://emberjs.com/guides/models/
+
+Read the whole "Models" section of the Ember Guides. There's a lot of material here but take your time.
+
+## Bonus Point Assignments
+
+### RSVP.js Promises
+
+:book: https://github.com/tildeio/rsvp.js
+
+RSVP.js is the library Ember uses for promises. Read the README, particularly if you need a refresher on promises in general.
+
+### Modeling the App Store and iTunes with Ember Data
+
+:tv: https://www.youtube.com/watch?v=i1_aBX8web4
+
+Presentation from EmberConf 2014. Dude builds an Ember App on top of the App Store and other APIs. Shows how powerful custom adapters can be.
+
 ## Notes
 
 ### Ember Data
@@ -119,37 +153,3 @@ export default DS.ActiveModelAdapter.extend({});
 ```
 
 That's also where you could define a `namespace` or `host` for your API.
-
-## Assignments
-
-### Ember Data Model Maker
-
-:rowboat: http://andycrum.github.io/ember-data-model-maker/
-
-Play with model definitions and see difference between `DS.RestAdapter` and `DS.ActiveModelAdapter`
-
-### The Object Model Guide
-
-:book: http://emberjs.com/guides/object-model/classes-and-instances/
-
-Read the whole "The Object Model" section of the Ember Guides.
-
-### Ember Models Guide
-
-:book: http://emberjs.com/guides/models/
-
-Read the whole "Models" section of the Ember Guides. There's a lot of material here but take your time.
-
-## Bonus Point Assignments
-
-### RSVP.js Promises
-
-:book: https://github.com/tildeio/rsvp.js
-
-RSVP.js is the library Ember uses for promises. Read the README, particularly if you need a refresher on promises in general.
-
-### Modeling the App Store and iTunes with Ember Data
-
-:tv: https://www.youtube.com/watch?v=i1_aBX8web4
-
-Presentation from EmberConf 2014. Dude builds an Ember App on top of the App Store and other APIs. Shows how powerful custom adapters can be.

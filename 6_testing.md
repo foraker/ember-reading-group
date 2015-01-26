@@ -1,5 +1,33 @@
 # Week 6: Testing
 
+## Assignments
+
+### Testing Guide
+
+:book: http://emberjs.com/guides/testing/
+
+Read the whole section of the Ember Guides on Testing.
+
+### Test-Driving Ember
+
+:tv: http://blog.unspace.ca/post/107903324912/cory-forsyth-on-test-driving-ember
+
+Introduction to testing in Ember that touches on the internals.
+
+## Bonus Point Assignments
+
+### Ember Data Model Tests
+
+:book: https://github.com/emberjs/data/blob/master/packages/ember-data/tests/unit/model_test.js
+
+Reading the tests for Ember Data Model shows a variety of unit tests and will probably teach you something new about models as a bonus.
+
+### QUnit Cookbook
+
+:book: http://qunitjs.com/cookbook/
+
+A good (and relatively short) introduction to QUnit's abilities.
+
 ## Notes
 
 [QUnit](http://qunitjs.com/) is the default testing framework for Ember.
@@ -258,31 +286,3 @@ test('Alert is called on displayAlert', function() {
   route._displayAlert(expectedText);
 });
 ```
-
-## Assignments
-
-### Testing Guide
-
-:book: http://emberjs.com/guides/testing/
-
-Read the whole section of the Ember Guides on Testing.
-
-### Test-Driving Ember
-
-:tv: http://blog.unspace.ca/post/107903324912/cory-forsyth-on-test-driving-ember
-
-Introduction to testing in Ember that touches on the internals.
-
-## Bonus Point Assignments
-
-### Ember Data Model Tests
-
-:book: https://github.com/emberjs/data/blob/master/packages/ember-data/tests/unit/model_test.js
-
-Reading the tests for Ember Data Model shows a variety of unit tests and will probably teach you something new about models as a bonus.
-
-### QUnit Cookbook
-
-:book: http://qunitjs.com/cookbook/
-
-A good (and relatively short) introduction to QUnit's abilities.

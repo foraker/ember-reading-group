@@ -1,27 +1,5 @@
 # Week 2: Jump In!
 
-## Introduction
-
-### Notes
-
-Read the assigned Ember Guides. Not going to reiterate  most of that here.
-
-#### Possibly Surprising Things
-
-File names are hyphenated.
-
-Routes tell the template what model to display.
-
-Controllers store state. Template retrieve properties from controllers which decorate models.
-
-### Activity
-
-This week we're just going to build an Ember application. The goal is to learn enough to be dangerous. In later weeks, we'll go more in depth. This week is just to see how we can build something.
-
-We'll be running through the creation of the start of an interface for a blog.
-
-https://github.com/artfuldodger/ember-blog
-
 ## Assignments
 
 ### Core Concepts Guide
@@ -55,3 +33,25 @@ Notes regarding the Airpair posts:
 ## Reference
 
 :tv: If you want to see a screencast of me doing this activity while drunk, it's available [here](https://www.youtube.com/watch?v=vLXGKNA4P_g).
+
+## Introduction
+
+### Notes
+
+Read the assigned Ember Guides. Not going to reiterate  most of that here.
+
+#### Possibly Surprising Things
+
+File names are hyphenated.
+
+Routes tell the template what model to display.
+
+Controllers store state. Template retrieve properties from controllers which decorate models.
+
+### Activity
+
+This week we're just going to build an Ember application. The goal is to learn enough to be dangerous. In later weeks, we'll go more in depth. This week is just to see how we can build something.
+
+We'll be running through the creation of the start of an interface for a blog.
+
+https://github.com/artfuldodger/ember-blog

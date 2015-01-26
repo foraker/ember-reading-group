@@ -1,5 +1,33 @@
 # Week 5: Routing and Controllers
 
+## Assignments
+
+### Routing Guide
+
+:book: http://emberjs.com/guides/routing/
+
+Read the whole section of the Ember Guides on Routing.
+
+### Controllers Guide
+
+:book: http://emberjs.com/guides/controllers/
+
+Read the whole section of the Ember Guides on Controllers.
+
+## Bonus Point Assignments
+
+### Cage Match - EmberJS vs. Angular
+
+:tv: https://vimeo.com/68215606
+
+Tom Dale and Rob Conery go head-to-head implementing features in Ember and Angular. Skip to the 13 minute mark for the relevant bit. You can stop watching after Tom's first coding session but the whole thing provides an interesting comparision between Ember and Angular.
+
+### Mr Router Embraces the Controller
+
+:tv: https://www.youtube.com/watch?v=Syv_OTzHOr0&list=PLE7tQUdRKcyaOyfBnAndJxQ9PNVmKva0d&index=5
+
+Talk was given before query params were released. Discusses motivation for putting them in controllers instead of routes. Explains division of router and controller responsibilities.
+
 ## Notes
 
 ### Routing
@@ -135,31 +163,3 @@ Controllers decorate your models with display logic. Their properties aren't per
 You can specify an `itemController` in an `ArrayController` to decorate each item you're iterating over with a given `ObjectController`.
 
 For a nested resource, you can specify that its controller `needs` its parent controller. This could make, for example, `controllers.post` available in a comments controller. This would allow you to get information about the post when you're viewing its comments. You can also make a property on the comments controller: `post: Ember.computed.alias("controllers.post")`.
-
-## Assignments
-
-### Routing Guide
-
-:book: http://emberjs.com/guides/routing/
-
-Read the whole section of the Ember Guides on Routing.
-
-### Controllers Guide
-
-:book: http://emberjs.com/guides/controllers/
-
-Read the whole section of the Ember Guides on Controllers.
-
-## Bonus Point Assignments
-
-### Cage Match - EmberJS vs. Angular
-
-:tv: https://vimeo.com/68215606
-
-Tom Dale and Rob Conery go head-to-head implementing features in Ember and Angular. Skip to the 13 minute mark for the relevant bit. You can stop watching after Tom's first coding session but the whole thing provides an interesting comparision between Ember and Angular.
-
-### Mr Router Embraces the Controller
-
-:tv: https://www.youtube.com/watch?v=Syv_OTzHOr0&list=PLE7tQUdRKcyaOyfBnAndJxQ9PNVmKva0d&index=5
-
-Talk was given before query params were released. Discusses motivation for putting them in controllers instead of routes. Explains division of router and controller responsibilities.

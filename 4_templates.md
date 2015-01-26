@@ -1,5 +1,45 @@
 # Week 4: Templates, Views, and Components
 
+## Assignments
+
+### Templates Guide
+
+:book: http://emberjs.com/guides/templates/the-application-template/
+
+Introduction to defining templates in Ember.
+
+### Views Guide
+
+:book: http://emberjs.com/guides/views/
+
+Read the whole section of the Ember Guides on Views.
+
+### Components Guide
+
+:book: http://emberjs.com/guides/components/
+
+Read the whole section of the Ember Guides on Components.
+
+## Bonus Point Assignments
+
+### HTMLBars
+
+:book: http://colintoh.com/blog/htmlbars
+
+Talks about what's upcoming as Ember transitions from Handlebars to HTMLbars.
+
+### Using Ember to Make the Seemingly Impossible Easy
+
+:tv: https://www.youtube.com/watch?v=JC8TOXe8TYM
+
+The talk deals with solving several problems with clever uses of Ember. The relevant part deals with using Ember components to encapsulate D3 widgets starting at 7:40. The whole video's worth watching though, if you can deal with the feedback.
+
+### Custom Elements
+
+:book: http://www.html5rocks.com/en/tutorials/webcomponents/customelements/
+
+This guide walks through using the [W3 Spec on Custom Elements](http://w3c.github.io/webcomponents/spec/custom/) to define custom elements. The point is mostly to be aware that this is a spec that's coming at some point in the future and Ember's trying to be compatible in regard to components.
+
 ## Notes
 
 ### Templates
@@ -61,43 +101,3 @@ Boolean properties determine if a class name matching the property's name is add
 Actions triggered from within your component template are handled by your `Component` subclass. If you want to send that action up to the controller/router, call `this.sendAction()` from your Component.
 
 Component actions should largely be used to translate primitive events into events that make sense within the context of your application.
-
-## Assignments
-
-### Templates Guide
-
-:book: http://emberjs.com/guides/templates/the-application-template/
-
-Introduction to defining templates in Ember.
-
-### Views Guide
-
-:book: http://emberjs.com/guides/views/
-
-Read the whole section of the Ember Guides on Views.
-
-### Components Guide
-
-:book: http://emberjs.com/guides/components/
-
-Read the whole section of the Ember Guides on Components.
-
-## Bonus Point Assignments
-
-### HTMLBars
-
-:book: http://colintoh.com/blog/htmlbars
-
-Talks about what's upcoming as Ember transitions from Handlebars to HTMLbars.
-
-### Using Ember to Make the Seemingly Impossible Easy
-
-:tv: https://www.youtube.com/watch?v=JC8TOXe8TYM
-
-The talk deals with solving several problems with clever uses of Ember. The relevant part deals with using Ember components to encapsulate D3 widgets starting at 7:40. The whole video's worth watching though, if you can deal with the feedback.
-
-### Custom Elements
-
-:book: http://www.html5rocks.com/en/tutorials/webcomponents/customelements/
-
-This guide walks through using the [W3 Spec on Custom Elements](http://w3c.github.io/webcomponents/spec/custom/) to define custom elements. The point is mostly to be aware that this is a spec that's coming at some point in the future and Ember's trying to be compatible in regard to components.
