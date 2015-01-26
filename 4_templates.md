@@ -28,6 +28,12 @@ Read the whole section of the Ember Guides on Components.
 
 Talks about what's upcoming as Ember transitions from Handlebars to HTMLbars.
 
+### New Component Patterns
+
+:tv: https://www.youtube.com/watch?v=nvB8iAwc2QQ#t=6574
+
+An excerpt from the NYC meetup, this talk introduces the approach to components that Ember will be taking as it moves toward 2.0. Touches on some things that will be introduced in the forthcoming 1.10 release.
+
 ### Using Ember to Make the Seemingly Impossible Easy
 
 :tv: https://www.youtube.com/watch?v=JC8TOXe8TYM
