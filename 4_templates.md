@@ -28,6 +28,12 @@ Read the whole section of the Ember Guides on Components.
 
 Talks about what's upcoming as Ember transitions from Handlebars to HTMLbars.
 
+### Awesome Ember.js Form Components
+
+:book: http://alexspeller.com/simple-forms-with-ember/
+
+Deals with using components to beautify your forms.
+
 ### New Component Patterns
 
 :tv: https://www.youtube.com/watch?v=nvB8iAwc2QQ#t=6574
