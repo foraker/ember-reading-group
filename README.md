@@ -48,3 +48,5 @@ Explore more with this organized links of additional resources that didn't fit w
 :tv: Watch this
 
 :rowboat: Do this
+
+:sound: Hear this

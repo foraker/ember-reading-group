@@ -20,6 +20,12 @@ Weekly newsletter with new Ember materials
 
 Community-submitted resources and discussion. [EmberFlare](https://emberflare.com/entries) is an Ember-specific site along the same vein but isn't well trafficked.
 
+### Ember Land
+
+:sound: http://www.ember.land/
+
+Podcast on Ember.
+
 ## Deployment
 
 ### Lightning Fast Deployment of Your Rails-backed JavaScript app
