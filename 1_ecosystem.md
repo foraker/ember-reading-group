@@ -13,7 +13,7 @@ You'll use this syntax in your Ember apps. Read this short page.
 
 Read the following sections:
 
-- Getting Started (Really just the "Folder Layout" layout bit)
+- Getting Started (especially [Folder Layout](http://www.ember-cli.com/#folder-layout))
 - Naming Conventions
 - Asset Compilation
 - Managing Dependencies
