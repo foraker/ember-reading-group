@@ -9,14 +9,14 @@ You'll use this syntax in your Ember apps. Read this short page.
 
 ### Ember CLI documentation
 
-:book: http://www.ember-cli.com/#getting-started
+:book: http://www.ember-cli.com/#overview
 
 Read the following sections:
 
-- Getting Started (Really just the "Folder Layout" layout bit)
-- Naming Conventions
-- Asset Compilation
-- Managing Dependencies
+- [Getting Started](http://www.ember-cli.com/#getting-started) (Really just the "Folder Layout" layout bit)
+- [Naming Conventions](http://www.ember-cli.com/#naming-conventions)
+- [Asset Compilation](http://www.ember-cli.com/#asset-compilation)
+- [Managing Dependencies](http://www.ember-cli.com/#managing-dependencies)
 
 ## Bonus Point Assignments
 
