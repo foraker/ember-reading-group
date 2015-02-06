@@ -9,14 +9,14 @@ Ember CLI supports ECMAScript 6 by using a transpiler. You should become acquain
 
 ### Ember CLI documentation
 
-:book: http://www.ember-cli.com/#getting-started
+:book: http://www.ember-cli.com/#overview
 
 Read the following sections:
 
-- Getting Started (especially [Folder Layout](http://www.ember-cli.com/#folder-layout))
-- Naming Conventions
-- Asset Compilation
-- Managing Dependencies
+- [Getting Started](http://www.ember-cli.com/#getting-started) (especially [Folder Layout](http://www.ember-cli.com/#folder-layout))
+- [Naming Conventions](http://www.ember-cli.com/#naming-conventions)
+- [Asset Compilation](http://www.ember-cli.com/#asset-compilation)
+- [Managing Dependencies](http://www.ember-cli.com/#managing-dependencies)
 
 ## Bonus Point Assignments
 
