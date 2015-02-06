@@ -5,6 +5,9 @@
 ### JavaScript modules
 :book: http://jsmodules.io/
 
+### ES6 syntax
+:book: https://6to5.org/docs/learn-es6/
+
 You'll use this syntax in your Ember apps. Read this short page.
 
 ### Ember CLI documentation
