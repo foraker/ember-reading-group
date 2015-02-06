@@ -2,13 +2,10 @@
 
 ## Assignments
 
-### JavaScript modules
-:book: http://jsmodules.io/
-
 ### ES6 syntax
 :book: https://6to5.org/docs/learn-es6/
 
-You'll use this syntax in your Ember apps. Read this short page.
+Ember CLI supports ECMAScript 6 by using a transpiler. You should become acquainted with the new syntax and features. You'll be using modules frequently; [read more about modules here](http://jsmodules.io/).
 
 ### Ember CLI documentation
 
