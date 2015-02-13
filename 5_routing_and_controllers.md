@@ -90,8 +90,6 @@ Router.map(function() {
 
 and add some markup to `app/templates/bananas.hbs` for it to be rendered when you visit `/bananas`.
 
-Defining your own `App.Controller`, `App.ObjectController` or `App.ArrayController` allows you to customize the auto-generated controllers.
-
 ### Rendering Templates
 
 A route handler is responsible for rendering templates.
@@ -113,7 +111,7 @@ You can render multiple templates into multiple outlets.
 Example of using query parameters to filter in the controller (straight from [the guides](http://emberjs.com/guides/routing/query-params/)):
 
 ```javascript
-App.ArticlesController = Ember.ArrayController.extend({
+App.ArticlesController = Ember.Controller.extend({
   queryParams: ['category'],
   category: null,
 
@@ -156,10 +154,6 @@ Controllers decorate your models with display logic. Their properties aren't per
 
 "Templates know about controllers and controllers know about models"
 
-`ArrayController`s are used to decorate collections of data.
-
-`ObjectController`s are used to decorate a single model.
-
-You can specify an `itemController` in an `ArrayController` to decorate each item you're iterating over with a given `ObjectController`.
+The use of `ArrayController` or `ObjectController` is being deprecated - just use `Ember.Controller`.
 
 For a nested resource, you can specify that its controller `needs` its parent controller. This could make, for example, `controllers.post` available in a comments controller. This would allow you to get information about the post when you're viewing its comments. You can also make a property on the comments controller: `post: Ember.computed.alias("controllers.post")`.
