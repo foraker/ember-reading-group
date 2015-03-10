@@ -28,17 +28,11 @@ Podcast on Ember.
 
 ## Deployment
 
-### Lightning Fast Deployment of Your Rails-backed JavaScript app
+### The Art of Ember Deployment
 
-:tv: https://www.youtube.com/watch?v=QZVYP3cPcWQ
+:tv: https://www.youtube.com/watch?v=4EDetv_Rw5U&index=4&list=PLE7tQUdRKcyacwiUPs0CjPYt6tJub4xXU
 
-Discusses advantages of separating Rails and Ember deployments and the neat things it enables.
-
-### Deploying Ember Apps
-
-:tv: https://www.youtube.com/watch?v=nvB8iAwc2QQ#t=4502
-
-Introduces a gem, [front_end_builds](https://github.com/tedconf/front_end_builds), and with an accompanying Ember CLI addon, [ember-cli-front-end-builds](https://github.com/tedconf/ember-cli-front-end-builds) that enables the approach to deployment described in the above talk.
+From EmberConf 2015. Discusses an approach to managing deploying Ember and your backend separately. Original idea was introduced at [RailsConf 2014](https://www.youtube.com/watch?v=QZVYP3cPcWQ).
 
 ### Architecting Ember in Production
 
