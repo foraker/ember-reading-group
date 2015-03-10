@@ -2,11 +2,17 @@
 
 ## General
 
-### Ember Conf 2014 Videos
+### EmberConf 2015 Videos
+
+:tv: https://www.youtube.com/playlist?list=PLE7tQUdRKcyacwiUPs0CjPYt6tJub4xXU
+
+All videos and slides from 2015 EmberConf.
+
+### EmberConf 2014 Videos
 
 :tv: http://2014.emberconf.com/schedule.html
 
-All videos and slides from the 2014 Ember conference.
+All videos and slides from 2014 EmberConf.
 
 ### Ember Weekly
 
