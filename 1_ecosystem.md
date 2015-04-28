@@ -108,10 +108,10 @@ ember server
 #### Things You Probably Want
 
 ##### SASS support
-`npm install --save-dev broccoli-sass`
+`ember install ember-cli-sass`
 
 ##### CoffeeScript support
-`npm install --save-dev ember-cli-coffeescript`
+`ember install ember-cli-coffeescript`
 
 Note that you will have to escape `import` and `export` lines in your .coffee
 files with beginning and ending ticks, e.g.
@@ -119,7 +119,7 @@ files with beginning and ending ticks, e.g.
     `import Ember from 'ember';`
 
 ##### Bootstrap
-`bower install --save-dev bootstrap`
+`ember install:bower bootstrap`
 
 Then, in Brocfile.js, add the following line before `module.exports = app.toTree();`:
 
